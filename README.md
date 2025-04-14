@@ -7,27 +7,27 @@
 ## Exercise Links
 
 ### Exercise 1
-https://www.talos.dev/v1.9/reference/cli/#talosctl-gen-config
+- https://www.talos.dev/v1.9/reference/cli/#talosctl-gen-config
 
 ### Exercise 2
-https://www.talos.dev/v1.9/reference/cli/#talosctl-apply-config
+- https://www.talos.dev/v1.9/reference/cli/#talosctl-apply-config
 
 ### Exercise 3
-https://www.talos.dev/v1.9/reference/cli/#talosctl-config-endpoint
-https://www.talos.dev/v1.9/reference/cli/#talosctl-config-node
+- https://www.talos.dev/v1.9/reference/cli/#talosctl-config-endpoint
+- https://www.talos.dev/v1.9/reference/cli/#talosctl-config-node
 
 ### Exercise 4
-https://www.talos.dev/v1.9/reference/cli/#talosctl-config-merge
+- https://www.talos.dev/v1.9/reference/cli/#talosctl-config-merge
 
 ### Exercise 5
-https://www.talos.dev/v1.9/reference/cli/#talosctl-bootstrap
-https://www.talos.dev/v1.9/reference/cli/#talosctl-health
+- https://www.talos.dev/v1.9/reference/cli/#talosctl-bootstrap
+- https://www.talos.dev/v1.9/reference/cli/#talosctl-health
 
 ### Exercise 6
-https://www.talos.dev/v1.9/reference/cli/#talosctl-kubeconfig
+- https://www.talos.dev/v1.9/reference/cli/#talosctl-kubeconfig
 
 ### Exercise 8
-https://www.talos.dev/v1.9/reference/cli/#talosctl-patch
+- https://www.talos.dev/v1.9/reference/cli/#talosctl-patch
 
 ### Exercise 9
-https://www.talos.dev/v1.9/reference/cli/#talosctl-upgrade
+- https://www.talos.dev/v1.9/reference/cli/#talosctl-upgrade

@@ -4,8 +4,8 @@
     "dockerfile": "Dockerfile"
   },
   "features": {
-    "ghcr.io/devcontainers-contrib/features/digitalocean-cli:1": {},
-    "ghcr.io/devcontainers-contrib/features/go-task:1": {},
+    "ghcr.io/devcontainers-extra/features/digitalocean-cli:1": {},
+    "ghcr.io/devcontainers-extra/features/go-task:1": {},
     "ghcr.io/rio/features/k9s": {},
     "ghcr.io/rio/features/kustomize": {},
     "ghcr.io/ktijssen/features/gum": {},

@@ -2,18 +2,14 @@
 
 set -e
 
-clear
-email=$(gum input --placeholder "Enter your emailadress")
-studentName=$(echo "$email" | cut -d '@' -f 1 | tr -d '.')
-
-digitalOceanInfo=$(doctl compute droplet list --format Name,PublicIPv4 -t $TOKEN | grep $studentName --color=never | sort)
+# expires july 16th
+b64token="ZG9wX3YxXzI5NWQ5MjI3MmZkNTM3NTc3MzYxODJlMjVlOWYwMTI4ZTFhYTFjZjVlYzljMWM0YTIzNzA0YTRmMjhjNjViOGQ="
 
 clear
 
-if [[ -z ${digitalOceanInfo} ]]; then
-  gum log -l error "No IP-address found for this emailadress: $email"
-	exit 1
-fi
+digitalOceanInfo=$(doctl compute droplet list --format Name,PublicIPv4 -t "$(echo -n $b64token | base64 -d)" | grep -v "omni" | grep -v "Name" | gum choose)
+
+clear
 
 gum style \
 	--foreground 140 --border-foreground 100 --border double \

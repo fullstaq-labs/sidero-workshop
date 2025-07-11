@@ -1,4 +1,3 @@
 {
-    "image": "docker.io/kevintijssen/sideroworkshop"
+  "image": "ghcr.io/fullstaq-labs/sidero-workshop"
 }
-  

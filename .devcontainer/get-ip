@@ -1,0 +1,23 @@
+#!/bin/bash
+
+set -e
+
+clear
+email=$(gum input --placeholder "Enter your emailadress")
+studentName=$(echo "$email" | cut -d '@' -f 1 | tr -d '.')
+
+digitalOceanInfo=$(doctl compute droplet list --format Name,PublicIPv4 -t $TOKEN | grep $studentName --color=never | sort)
+
+clear
+
+if [[ -z ${digitalOceanInfo} ]]; then
+  gum log -l error "No IP-address found for this emailadress: $email"
+	exit 1
+fi
+
+gum style \
+	--foreground 140 --border-foreground 100 --border double \
+	--align middle --width 100 --margin="1 2" --padding="2 4" \
+  "DigitalOcean Talos Virtual Machines
+
+$digitalOceanInfo"

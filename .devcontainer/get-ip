@@ -7,7 +7,7 @@ b64token="ZG9wX3YxXzI5NWQ5MjI3MmZkNTM3NTc3MzYxODJlMjVlOWYwMTI4ZTFhYTFjZjVlYzljMW
 
 clear
 
-digitalOceanInfo=$(doctl compute droplet list --format Name,PublicIPv4 -t "$(echo -n $b64token | base64 -d)" | grep -v "omni" | grep -v "Name" | gum choose)
+digitalOceanInfo=$(doctl compute droplet list --format Name,PublicIPv4 -t "$(echo -n $b64token | base64 -d)" | grep -v "omni" | grep -v "Name" | gum filter)
 
 clear
 
